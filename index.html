@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> Bootstrap Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="CSS/style.css" />
+
+</head>
+<body>
+  <nav style="height: 100hh;"  class=" navbar navtop-expand-lg navtop-light bg-secondary shadow-sm px-3">
+    <div class="container-fluid">
+      <div class="icon">
+        <i class=""></i>
+      </div>
+    </div>
+  </nav>
+<nav style="height:10hh;" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-3">
+  <div class="container-fluid">
+    <!-- Hamburger  Dropdown -->
+    <div class="dropdown me-3">
+      <button class="btn btn-success dropdown-toggle" type="button" id="hamburgerDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-list fs-3"></i>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="hamburgerDropdown">
+        <li><a class="dropdown-item" href="#">Crackers</a></li>
+        <li><a class="dropdown-item" href="#">Fresh Fruits</a></li>
+        <li><a class="dropdown-item" href="#">Glutenfree</a></li>
+        <li><a class="dropdown-item" href="#">Organic</a></li>
+        <li><a class="dropdown-item" href="#">Vegan</a></li>
+        <li><a class="dropdown-item" href="#">Vegeterian</a></li>
+      </ul>
+    </div>
+
+    <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo-1.png" alt="Logo" width="150" height="75" class="me-2">
+        <!-- <div>
+          <strong style="color:sucess;">Organify</strong><br>
+          <small class="text-muted" style="font-size: 20;">Organic Food Store</small>
+        </div> -->
+      </a>
+
+    <!-- Navbar Toggler -->
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+
+    <!-- Navbar Content -->
+    <!-- <div class="collapse navbar-collapse" id="mainNavbar"> -->
+
+      <!-- Nav Links -->
+      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- MENU 1: Cards Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="menu1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Home
+          </a>
+          <div class="dropdown-menu dropdown-mega shadow">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">Card One</h5>
+                      <p class="card-text">Short description of card one.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">Card Two</h5>
+                      <p class="card-text">Short description of card two.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">Card Three</h5>
+                      <p class="card-text">Short description of card three.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- MENU 2: Mega Menu with 4 Columns -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="menu2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Shop
+          </a>
+          <div class="dropdown-menu dropdown-mega shadow">
+            <div class="container">
+              <div class="row">
+
+                <!-- Column 1 -->
+                <div class="col-md-3">
+                  <h6 class="text-uppercase">Product Layout</h6>
+                  <ul class="list-unstyled">
+                    <li><a class="dropdown-item" href="#">Grid Layout</a></li>
+                    <li><a class="dropdown-item" href="#">List Layout</a></li>
+                    <li><a class="dropdown-item" href="#">Masonry</a></li>
+                  </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-md-3">
+                  <h6 class="text-uppercase">Product Type</h6>
+                  <ul class="list-unstyled">
+                    <li><a class="dropdown-item" href="#">Simple</a></li>
+                    <li><a class="dropdown-item" href="#">Variable</a></li>
+                    <li><a class="dropdown-item" href="#">Grouped</a></li>
+                    <li><a class="dropdown-item" href="#">External</a></li>
+                  </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-md-3">
+                  <h6 class="text-uppercase">Product Page</h6>
+                  <ul class="list-unstyled">
+                    <li><a class="dropdown-item" href="#">Full Width</a></li>
+                    <li><a class="dropdown-item" href="#">With Sidebar</a></li>
+                    <li><a class="dropdown-item" href="#">With Tabs</a></li>
+                  </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-md-3">
+                  <h6 class="text-uppercase">Shops Product</h6>
+                  <ul class="list-unstyled">
+                    <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+                    <li><a class="dropdown-item" href="#">Shop List</a></li>
+                    <li><a class="dropdown-item" href="#">Shop Masonry</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Menu 3 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="menu3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           pages
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="menu3">
+            <li><a class="dropdown-item" href="#">Submenu X</a></li>
+            <li><a class="dropdown-item" href="#">Submenu Y</a></li>
+          </ul>
+        </li>
+
+        <!-- Menu 4 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="menu4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="menu4">
+            <li><a class="dropdown-item" href="#">Sub A</a></li>
+            <li><a class="dropdown-item" href="#">Sub B</a></li>
+          </ul>
+        </li>
+
+        <!-- Menu 5 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="menu5" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Contat Us
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="menu5">
+            <li><a class="dropdown-item" href="#">Sub Alpha</a></li>
+            <li><a class="dropdown-item" href="#">Sub Beta</a></li>
+          </ul>
+        </li>
+      <!-- Search Form -->
+      <form class="d-flex me-4" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+
+      <!-- My Account Dropdown -->
+      <ul class="navbar-nav me-3">
+        <i class="bi bi-person-fill fs-5" role="button" title="Profile"></i> 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            My Account
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
+            <li><a class="dropdown-item" href="#">Login</a></li>
+            <li><a class="dropdown-item" href="#">Register</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Icons -->
+      <div class="d-flex align-items-center gap-3 text-dark">
+        <div class="icon-wrapper">
+          <i class="fa-solid fa-right-left fa-lg text-dark"></i>
+          <span class="badge">0</span>
+        </div>
+
+        <div class="icon-wrapper">
+          <i class="fa-regular fa-heart fa-lg text-dark"></i>
+          <span class="badge">0</span>
+        </div>
+
+        <div class="icon-wrapper me-2">
+          <i class="fa-solid fa-bag-shopping fa-lg text-dark"></i>
+          <span class="badge">0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<!-- caruosel section -->
+<section class=" row caruosel text-dark" style="background-color: lightgreen;" >
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class=" row carousel-inner index">
+            <div class="col-lg-10  carousel-item active index">
+                <div class="background "></div>
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Nature's Choice for healthy Living</h5>
+                <p>Crafted with the highest Quality Organic,hi-oleic peanuts and 
+                  a touch of sea salt,this extra crunchy delight
+                </p>
+                <a href="#" class="btn btn-danger">Purchase Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/product-3.png" class="d-block " alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                <h5>Nature's Choice for healthy Living</h5>
+                <p>Crasfted with the highest Quality Organic,hi-oleic peanuts and 
+                  a touch of sea salt,this extra chronchy delight.
+                </p>
+                <a href="#" class="btn btn-danger">Purchase Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/OSK.jpg" class="d-block" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                 <h5>Nature's Choice for healthy Living</h5>
+                 <p>Crasfted with the highest Quality Organic,hi-oleic peanuts and 
+                   a touch of sea salt,this extra chronchy delight.
+                 </p>
+                 <a href="#" class="btn btn-danger">Purchase Now</a>
+                </div>
+             </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+<!-- icons section -->
+<section class="iconpic">
+    <div class="container">
+        <div class="container py-5">
+            <div class="row">
+
+    <!-- Card 1 -->
+                <div class="col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/about-us3.png" class="card-img" alt="Card Image 1" style="width: 100px;" >
+                    <div class="card-body">
+                     <p class="card-text">This is a short description for the first card.</p>
+                    </div>
+                </div>
+                </div>
+
+    <!-- Card 2 -->
+                <div class="col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/about-us4.png" class="card-img-top" alt="Card Image 2" style="width: 100px;">
+                    <div class="card-body">
+                     <p class="card-text">This is a short description for the second card.</p>
+                    </div>
+                </div>
+                </div>
+
+    <!-- Card 3 -->
+                <div class="col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/about-us3.png" class="card-img-top" alt="Card Image 3" style="width: 100px;">
+                    <div class="card-body">
+                     <p class="card-text">This is a short description for the third card.</p>
+                    </div>
+                </div>
+                </div>
+
+    <!-- Card 4 -->
+                <div class="col-lg-3">
+                <div class="card h-90 shadow-sm">
+                    <img src="images/about-us4 (1).png" class="card-img-top" alt="Card Image 4" style="width: 150px;">
+                    <div class="card-body">
+                     <p class="card-text">This is a short description for the fourth card.</p>
+                    </div>
+                </div>
+                </div>
+
+</div>
+</div>
+        </div>
+    </div>
+</section>
+
+<!-- product section -->
+<section class="product container my-5">
+    <h1> 100% Organic, Always Fresh, Guaranteed <br> Quality Products </h1>
+
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="row g-9">
+                <div class="col-lg-2">
+                    <button class="btn-products btn btn-secondary">All Products</button>
+                </div>
+                <div class="col-lg-2">
+                    <button class="btn-product btn btn-secondary">Vegans</button>
+                </div>
+                <div class="col-lg-2">
+                    <button class="btn-product btn btn-secondary">Crackers</button>
+                </div> 
+                <div class="col-lg-2">
+                    <button class="btn-product btn btn-secondary">Fruits</button>
+                </div>
+                <div class="col-lg-2">
+                    <button class="btn-product btn btn-primary">Sells</button>
+                </div>
+                <div class="col-lg-2">
+                    <button class="btn-product btn btn-secondary">Vegan Curry</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            
+        </div>
+</section>
+
+<!-- product images -->
+ <section class="product">
+    <div class="container">
+        <div class="product py-5">
+            <div class="row">
+
+   <!-- product 1 -->
+              <div class="col-md-3">
+                <div class="card h-100 shadow-sm p-10 ">
+                    <img src="images/pd15-min-600x600.png" class="card-img-top" alt="Card Image 1">
+                    <div class="card-body">
+                    <h5 class="card-title">Card Title 1</h5>
+                    <p class="card-text">This is a short description for the first card.</p>
+                    <p class="fw-bold">$3.18</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+              </div>
+   <!-- product 2 -->
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/pd5-min-600x600.png" class="card-img-top" alt="Card Image 1">
+                    <div class="card-body">
+                    <h5 class="card-title">Card Title 1</h5>
+                    <p class="card-text">This is a short description for the first card.</p>
+                    <p class="fw-bold">$3.18</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+              </div>
+   <!-- product 3 -->
+   <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/pd13-min-600x600.png" class="card-img-top" alt="Card Image 1">
+                    <div class="card-body">
+                    <h5 class="card-title">Card Title 1</h5>
+                    <p class="card-text">This is a short description for the first card.</p>
+                    <p class="fw-bold">$3.18</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+              </div>
+   <!-- product 4 -->
+   <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/pd7-min-600x600.png" class="card-img-top" alt="Card Image 1">
+                    <div class="card-body">
+                    <h5 class="card-title">Card Title 1</h5>
+                    <p class="card-text">This is a short description for the first card.</p>
+                    <p class="fw-bold">$3.18</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+              </div>            
+    <!-- product 5 -->
+   <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/pd15-min-600x600.png" class="card-img-top" alt="Card Image 1">
+                    <div class="card-body">
+                    <h5 class="card-title">Card Title 1</h5>
+                    <p class="card-text">This is a short description for the first card.</p>
+                    <p class="fw-bold">$3.18</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+              </div>
+   <!-- product 6 -->
+   <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/pd13-min-600x600.png" class="card-img-top" alt="Card Image 1">
+                    <div class="card-body">
+                    <h5 class="card-title">Card Title 1</h5>
+                    <p class="card-text">This is a short description for the first card.</p>
+                    <p class="fw-bold">$3.18</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+              </div>
+    <!-- product 7 -->
+    <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/pd14-min-600x600.png" class="card-img-top" alt="Card Image 1">
+                    <div class="card-body">
+                    <h5 class="card-title">Card Title 1</h5>
+                    <p class="card-text">This is a short description for the first card.</p>
+                    <p class="fw-bold">$3.18</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+              </div>
+    <!-- product 8 -->
+    <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/pd2-min-600x600.png" class="card-img-top" alt="Card Image 1">
+                    <div class="card-body">
+                    <h5 class="card-title">sauce</h5>
+                    <p class="card-text">This is a short description for the first card.</p>
+                    <p class="fw-bold">$3.18</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+              </div>
+   <!-- product 9 -->
+   <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/pd15-min-600x600.png" class="card-img-top" alt="Card Image 1">
+                    <div class="card-body">
+                    <h5 class="card-title">Vegan</h5>
+                    <p class="card-text">Cocomels Chocolate Covered Caramels BITES</p>
+                    <p class="fw-bold">$3.18</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+              </div>
+    <!-- product 10 -->
+   <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/pd5-min-600x600.png" class="card-img-top" alt="Card Image 1">
+                    <div class="card-body">
+                    <h5 class="card-title">Sauce</h5>
+                    <p class="card-text">365 by whole Foods Market Syrup maple.</p>
+                     <p class="fw-bold">$6.25</p>
+                    <a href="#" class="btn btn-primary">Add to Chart</a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+              </div>
+   <!-- product 11 -->
+   <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/pd2-min-600x600.png" class="card-img-top" alt="Card Image 1">
+                    <div class="card-body">
+                    <h6 class="card-title">Vegan Curry</h6>
+                    <p class="card-text">Holle Baby Yogurt Pouches Organic Yogurt</p>
+                     <p class="fw-bold">$75.00-$150.00</p>
+                    <a href="#" class="btn btn-primary">Select Options</a>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+              </div>
+    <!-- product 12 -->
+   <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/pd1-min-600x600.png" class="card-img-top  img-fluid p-3" alt="product 12">
+                    <div class="card-body">
+                    <h6 class="card-title">Vegan</h6>
+                    <p class="card-text">Relative Foods Alliminuim Free <br>Baking Soda </p>
+                    <p class="fw-bold">$27.00</p>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+              </div>             
+ </section>  
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>More Products Button</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('path/to/hexagon-pattern.png'); /* Replace with your actual background image path */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-green {
+      background-color: #3faa45;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-green:hover {
+      background-color: #36913d;
+    }
+  </style>
+</head>
+<body>
+  <button class="btn btn-green">More Products +</button>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wholesome Dairy Delights</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .promo-banner {
+      background-color: #f8f9fa;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .promo-banner h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .promo-banner h2 {
+      font-size: 1.75rem;
+      color: #28a745;
+      margin-bottom: 20px;
+    }
+    .promo-banner p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+    .promo-banner .btn-group {
+      margin-bottom: 30px;
+    }
+    .promo-banner .btn-outline-success {
+      margin: 5px;
+    }
+    .promo-banner .product-icons img {
+      max-height: 80px;
+      margin: 10px;
+    }
+  </style>
+
+  <section class="promo-banner">
+    <div class="product-icons">
+      <img src="green-scooter.png" alt="Green Scooter" />
+      <img src="red-star.png" alt="Red Star" />
+      <img src="milk-carton.png" alt="Milk Carton" />
+      <img src="wildwonder-peach-ginger.png" alt="Peach Ginger Drink" />
+    </div>
+    <h1>Wholesome Dairy Delights</h1>
+    <h2>Delivered Fresh to You</h2>
+    <p>
+      Experience the goodness of fresh, wholesome dairy products delivered to your doorstep for ultimate convenience.
+    </p>
+    <div class="btn-group">
+      <button class="btn btn-outline-success">Fruits</button>
+      <button class="btn btn-outline-success">Vegetarian</button>
+      <button class="btn btn-outline-success">Sweet Snacks</button>
+      <button class="btn btn-outline-success">Crackers</button>
+      <button class="btn btn-outline-success">Pancake</button>
+      <button class="btn btn-outline-success">Fruits</button>
+      <button class="btn btn-outline-success">Creams</button>
+    </div>
+    <div>
+      <a href="#" class="btn btn-dark">Buy on Envato</a>
+    </div>
+  </section>
+
+  
+ 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

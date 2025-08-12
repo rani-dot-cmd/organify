@@ -1,0 +1,43 @@
+.carousel-item{
+    height: 90vh;
+    background-color: lightgreen;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+.slide.text{
+    max-width: 500px;
+    z-index: 2;
+}
+.slide.text h2{
+    color: #d55f37;
+    font-weight: bold;
+}
+.slide.text p{
+    font-size: 1.1rem;
+}
+.purchase-btn{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+}
+.purchase-btn:hover{
+    background-color: darkgreen;
+}
+.price-tag{
+    color: #e7cfc7;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.product-img{
+    position:absolute;
+    right: 5%;
+    bottom: 10%;
+    width: 35%;
+    max-width: 400px;
+    z-index: 1;
+}
